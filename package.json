@@ -1,0 +1,42 @@
+{
+  "name": "@mailtarn/node",
+  "version": "0.1.1",
+  "description": "Mailtarn for Node.js: send into a Mailtarn inbox and read captured email in tests (wait for a message, get its links and codes).",
+  "license": "MIT",
+  "author": "Mailtarn (https://mailtarn.com)",
+  "homepage": "https://mailtarn.com",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "email",
+    "testing",
+    "smtp",
+    "sandbox",
+    "e2e",
+    "otp",
+    "mailtarn"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
