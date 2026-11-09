@@ -1,10 +1,17 @@
 {
   "name": "@mailtarn/node",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Mailtarn for Node.js: send into a Mailtarn inbox and read captured email in tests (wait for a message, get its links and codes).",
   "license": "MIT",
   "author": "Mailtarn (https://mailtarn.com)",
   "homepage": "https://mailtarn.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mailtarn/node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mailtarn/node/issues"
+  },
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
